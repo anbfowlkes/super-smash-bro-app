@@ -13,7 +13,9 @@ function App() {
           fighters.map((element, index) => {
             return (
               <div>
-                <img src={`https://www.smashbros.com/assets_v2/img/fighter/thumb_a/${element.toLowerCase()}.png`} />
+
+                <img className="fighter-img" src={`https://www.smashbros.com/assets_v2/img/fighter/thumb_a/${element.toLowerCase()}.png`} />
+                <h5 className="fighter-name">{element}</h5>
               </div>
             )
           })
