@@ -36,7 +36,7 @@ function App() {
       {
         //conditional render (based on ternary)
         selectedFighter ? 
-        <FighterScreen /> :
+        <FighterScreen selectedFighter={selectedFighter} /> :
         null
       }
     </div>
